@@ -31,4 +31,6 @@ public class HeroeController {
     public Heroe crearHeroe(@RequestBody Heroe heroe){
         return heroeRepository.save(heroe);
     }
+
+
 }

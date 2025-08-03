@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Galería de Héroes</title>
+    <link rel="stylesheet" th:href="@{/css/galeria.css}">
+</head>
+<body>
+<h1>🌟 Liga de la Justicia</h1>
+<div class="galeria">
+    <div th:each="heroe : ${heroes}" class="ficha">
+        <img th:src="@{${heroe.imagen}}" alt="Imagen del héroe">
+        <h2 th:text="${heroe.nombre}">Nombre</h2>
+        <p th:text="${heroe.valor}">Valor</p>
+    </div>
+</div>
+</body>
+</html>
+
